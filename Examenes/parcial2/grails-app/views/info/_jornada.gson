@@ -1,0 +1,11 @@
+import com.itesm.mx.Jornada
+
+model {
+	Jornada jornada
+}
+
+json {
+	torneo jornada.torneo
+	numeroJornada jornada.numeroJornada
+	partidos tmpl.partido(jornada.partidos)
+}

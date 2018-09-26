@@ -1,0 +1,124 @@
+<div class="row partidos">
+    <div class=".col-xs-12 .col-sm-12 .col-lg-12 col-md-12">
+        <center><p>{{torneo}} - Jornada {{jornada}}</p></center>
+    </div>
+</div>
+
+<div class="row info">
+	<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+		<center><p>Local</p></center>
+	</div>
+	<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+		<center><p>VS</p></center>
+	</div>
+	<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+		<center><p>Visitante</p></center>
+	</div>
+</div>
+
+<div class="row jugados">
+	<div class=".col-xs-12 .col-sm-12 .col-lg-12 col-md-12">
+		<center><p>Partidos Jugados</p></center>
+	</div>
+</div>
+
+
+<div class ng-repeat="partido in terminados">
+	<div class="row">
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><img src="{{partido.localImg}}"/></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><h3>{{partido.golesLocal}} - {{partido.golesVisita}}</h3></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><img src="{{partido.visitaImg}}"/></center>
+		</div>	
+	</div>
+	<div class="row">
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><p>{{partido.local}}</p></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center>Finalizado</center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><p>{{partido.visitante}}</p></center>
+		</div>	
+	</div>
+</div>
+
+
+<div ng-if="jugando.length>0" class="row jugados">
+	<div class=".col-xs-12 .col-sm-12 .col-lg-12 col-md-12">
+		<center><p>Partidos en curso</p></center>
+	</div>
+</div>
+
+
+<div class ng-repeat="partido in jugando">
+	<div class="row">
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><img src="{{partido.localImg}}"/></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center>
+				<h3>
+					{{partido.golesLocal}} - {{partido.golesVisita}}
+				</h3>
+			</center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><img src="{{partido.visitaImg}}"/></center>
+		</div>	
+	</div>
+	<div class="row">
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center>
+				<p ng-if="!partido.golLocal">{{partido.local}}</p></center>
+				<h2 ng-if="partido.golLocal" class="golLabel">Goooooool!</h2>
+			</center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center>Minuto {{partido.tiempoMinutos}}</center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center>
+				<p ng-if="!partido.golVisita">{{partido.visitante}}</p>
+				<h2 ng-if="partido.golVisita" class="golLabel">Goooooool!</h2>
+			</center>
+		</div>	
+	</div>
+</div>
+
+<div ng-if="jugar.length>0" class="row jugados">
+	<div class=".col-xs-12 .col-sm-12 .col-lg-12 col-md-12">
+		<center><p>Partidos por Jugar</p></center>
+	</div>
+</div>
+
+
+<div class ng-repeat="partido in jugar">
+	<div class="row">
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><img src="{{partido.localImg}}"/></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><h3>{{partido.golesLocal}} - {{partido.golesVisita}}</h3></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><img src="{{partido.visitaImg}}"/></center>
+		</div>	
+	</div>
+	<div class="row">
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><p>{{partido.local}}</p></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center></center>
+		</div>
+		<div class=".col-xs-4 .col-sm-4 .col-lg-4 col-md-4">
+			<center><p>{{partido.visitante}}</p></center>
+		</div>	
+	</div>
+</div>

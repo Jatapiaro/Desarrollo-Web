@@ -1,0 +1,37 @@
+			  	.info {
+			  	    background-color: transparent;
+			  	    background-image: linear-gradient(to bottom, rgba(30, 87, 153, 0.2) 0%, rgba(125, 185, 232, 0) 100%);
+			  	    background-repeat: repeat;
+			  	    border-radius:10px;
+			  	    padding: 5px;
+			  	}
+			  	.stats{
+			  		border-radius:10px;
+			  		padding: 5px;
+			  		background-image: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(125, 185, 232, 0) 100%);
+			  		background-color: transparent;
+			  		background-repeat: repeat;
+			  		font-size: 25px;
+			  	}
+			  	.season{
+			  		padding: 5px;
+			  		background-color: #CFCFCF;
+			  		font-size: 20px;
+			  	}
+			  	.numbers{
+			  		padding: 5px;
+			  		background-color: #9E9E9E;
+			  		font-size: 15px;
+			  	}
+			  	.career{
+			  		padding: 5px;
+			  		background-color: #CFCFCF;
+			  		font-size: 15px;
+			  	}
+			  	.blue-font{
+			  		color: #234AFF;
+			  	}
+			  	.blue-font2{
+			  		color: #234AFF;
+			  		padding: 5px;
+			  	}

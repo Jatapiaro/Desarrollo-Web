@@ -1,0 +1,7 @@
+import com.itesm.mx.*
+
+model {
+	Jornada jornada
+}
+
+json tmpl.jornada(jornada)

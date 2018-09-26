@@ -1,0 +1,106 @@
+
+  <p>Ingresa una busqueda:<p> 
+  <input type="text" ng-model="query" ng-change="busqueda()">
+  <table class="table">
+    <thead>
+        <tr>
+          <th>Nómina</th> 
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Departamento</th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody >
+        <tr ng-repeat="trabajador in trabajadoresView">
+          <td>{{trabajador.nomina}}</td>
+          <td>{{trabajador.nombre}}</td>
+          <td>{{trabajador.apellido}}</td>
+          <td>{{trabajador.departamento}}</td>
+          <td><input class="btn btn-info" value="Modificar" ng-click="find(trabajador.id)"></input></td>
+          <td><input class="btn btn-info" value="Eliminar" ng-click="delete(trabajador.id)"></input></td>
+        </tr>
+      </tbody>
+  </table>
+  <input class="btn btn-info" value="Registrar empleado" ng-click="showRModal()"></input>
+
+
+
+
+  <div id="registroModal" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Nuevo empleado</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="nomina">Nómina:</label>
+                  <input type="text" class="form-control input-sm" ng-model="nomina"/>
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control input-sm" ng-model="nombre"/>
+                </div>
+                <div class="form-group">
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" class="form-control input-sm" ng-model="apellido"/>
+                </div>
+                 <div class="form-group">
+                  <label for="departamento">Departamento:</label>
+                  <select class="form-control input-sm" ng-model="departamento">
+                    <option value="Ventas">Ventas</option>
+                    <option value="Almacén">Almacén</option>
+                    <option value="Suministros">Suministros</option>
+                    <option value="Gerencia">Gerencia</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <input class="btn btn-info" value="Registrar trabajador" ng-click="add()">
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+  <div id="editModal" class="modal fade">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Editar empleado</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label for="nomina">Nómina:</label>
+                  <input type="text" class="form-control input-sm" ng-model="nomina"/>
+                </div>
+                <div class="form-group">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" class="form-control input-sm" ng-model="nombre"/>
+                </div>
+                <div class="form-group">
+                  <label for="apellido">Apellido:</label>
+                  <input type="text" class="form-control input-sm" ng-model="apellido"/>
+                </div>
+                 <div class="form-group">
+                  <label for="departamento">Departamento:</label>
+                  <select class="form-control input-sm" ng-model="departamento">
+                    <option value="Ventas">Ventas</option>
+                    <option value="Almacén">Almacén</option>
+                    <option value="Suministros">Suministros</option>
+                    <option value="Gerencia">Gerencia</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal-footer">
+                  <input class="btn btn-info" value="Editar trabajador" ng-click="edit()">
+              </div>
+          </div>
+      </div>
+  </div>
+
+

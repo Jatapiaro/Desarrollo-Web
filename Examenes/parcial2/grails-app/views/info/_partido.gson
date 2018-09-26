@@ -1,0 +1,20 @@
+import com.itesm.mx.Partido
+
+model {
+	Partido partido
+}
+
+json {
+	id partido.id
+	localImg partido.local.imagenURL
+	visitaImg partido.visitante.imagenURL
+	local partido.local.nombre
+	marcadorLocal partido.marcadorLocal
+	marcadorVisitante partido.marcadorVisitante
+	visitante partido.visitante.nombre
+	estado partido.estado
+	golLocal false
+	golVisita false
+	segundosLocal 0
+	segundosVisita 0
+}

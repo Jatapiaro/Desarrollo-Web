@@ -1,0 +1,60 @@
+{	
+	"jornada":{	
+		
+		"partidos":[
+
+			{"id":1,"local":"Veracruz","visitante":"Pachuca","golesLocal":0,"golesVisita":1,
+			"estatus":"Terminado","minutoActual":60000,"tiempoMinutos":90,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/3107/3107.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/11/11.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":2,"local":"Cruz Azul","visitante":"Tijuana","golesLocal":0,"golesVisita":0,
+			"estatus":"Jugando","minutoActual":13333,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/6/6.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/5/5.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":3,"local":"Morelia","visitante":"Tigres","golesLocal":0,"golesVisita":0,
+			"estatus":"Jugando","minutoActual":6660,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/10/10.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/16/16.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":4,"local":"Leon","visitante":"Atlas","golesLocal":0,"golesVisita":0,
+			"estatus":"Jugando","minutoActual":0,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/9/9.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/10445/10445.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":5,"local":"Necaxa","visitante":"Santos","golesLocal":0,"golesVisita":0,
+			"estatus":"Por Jugar","minutoActual":0,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/29/29.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/15/15.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":6,"local":"Guadalajara","visitante":"Chiapas","golesLocal":0,"golesVisita":0,
+			"estatus":"Por Jugar","minutoActual":0,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/7/7.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/3108/3108.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":7,"local":"Pumas","visitante":"Querétaro","golesLocal":0,"golesVisita":0,
+			"estatus":"Por Jugar","minutoActual":0,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/18/18.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/3106/3106.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0},
+
+			{"id":8,"local":"Puebla","visitante":"Toluca","golesLocal":0,"golesVisita":0,
+			"estatus":"Por Jugar","minutoActual":0,"tiempoMinutos":0,
+			"localImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/12/12.png",
+			"visitaImg":"https://s3.amazonaws.com/lmxwebsite/docs/archdgtl/AfldDrct/logos35x35/17/17.png",
+			"golLocal":false,"segundosGolLocal":0,"golVisita":false,"segundosGolVisita":0}
+			
+		],
+		"jornada":8,
+		"torneo":"Apertura 2016"
+	}
+}
+
+

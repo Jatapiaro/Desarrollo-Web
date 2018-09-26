@@ -1,0 +1,8 @@
+{{#each this}}
+	<tr>
+		<td>{{id}}</td>
+		<td>{{nombre}}</td>
+		<td>{{apellido}}</td>
+		<td><button onclick="redirect('{{id}}')">Ir al perfil</button></td>
+	</tr>
+{{/each}}
